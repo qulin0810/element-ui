@@ -346,7 +346,6 @@ export default {
             that.getDateFormatString(groupValue) === item &&
             calendarItemVoList.length > 0
         );
-        //vo.formattedTime.substring(这个方法需要改）
         eventData = {
           [item]:
             _ && _.calendarItemVoList.length

@@ -73,6 +73,12 @@ export const constantRoutes = [
         name: 'Tree',
         component: () => import('@/views/tree/index'),
         meta: { title: 'Tree', icon: 'tree' }
+      },
+      {
+        path: 'tableScroll',
+        name: 'tableScroll',
+        component: () => import('@/views/table-scroll/index'),
+        meta: { title: 'TableScroll', icon: 'tree' }
       }
     ]
   },
@@ -90,38 +96,17 @@ export const constantRoutes = [
     ]
   },
   {
-    path: '/component',
+    path: '/calendar',
     component: Layout,
-    redirect: '/component/calendar',
-    name: 'Component',
-    meta: { title: 'Component', icon: 'el-icon-s-help' },
     children: [
       {
-        path: 'calendar',
-        name: 'Calendar',
-        component: () => import('@/views/component/calendar/index'),
-        meta: { title: 'Calendar', icon: 'table' }
-      },
-      {
-        path: 'scroll-view',
-        name: 'scrollView',
-        component: () => import('@/views/component/scroll-view/index'),
-        meta: { title: 'Scroll', icon: 'tree' }
+        path: 'index',
+        name: 'calendar',
+        component: () => import('@/views/calendar/index'),
+        meta: { title: 'Calendar', icon: 'form' }
       }
     ]
   },
-  // {
-  //   path: '/calendar',
-  //   component: Layout,
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       name: 'calendar',
-  //       component: () => import('@/views/calendar/index'),
-  //       meta: { title: 'Calendar', icon: 'form' }
-  //     }
-  //   ]
-  // },
   {
     path: '/nested',
     component: Layout,

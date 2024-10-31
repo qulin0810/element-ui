@@ -8,7 +8,7 @@
       width="30%"
     >
       <span>这是一段信息</span>
-      <!-- <Calendar></Calendar> 这个名称会报错，页面重复-->
+      <!-- <TestChild></TestChild> -->
       <CalendarChild :visitData="visitData" :creatDateList="creatDateList"  :payVisit="payVisit" :visitDay="visitDay" :isCreated1="isCreated" :isVisited1="isVisited" :changeDate="changeDate" ></CalendarChild>
       <span slot="footer" class="dialog-footer">
         <el-button @click="dialogVisible = false">取 消</el-button>
@@ -23,7 +23,7 @@
 <script>
 import { mapGetters } from "vuex";
 import axios from "axios";
-import calendarList from "../../../../mock/data/calendar.json";
+import calendarList from "../../../mock/data/calendar.json";
 import CalendarChild from "@/components/CalendarChild";
 import dayjs from "dayjs";
 export default {
